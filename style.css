@@ -3,6 +3,7 @@
 /* font-family: 'Manrope', sans-serif; */
 /* font-weight: 500, 700 */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap");
 
 /* Reset */
 
@@ -15,10 +16,73 @@
 /* Variables */
 
 :root {
-  --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
   --desaturated-dark-blue: hsl(214, 17%, 51%);
   --grayish-blue: hsl(212, 23%, 69%);
   --light-grayish-blue: hsl(210, 46%, 95%);
 }
 
 /* Main Styles */
+
+html {
+  background-color: var(--light-grayish-blue);
+  font-family: "Manrope", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 41.688;
+  margin: 4rem 1.5rem;
+}
+
+.hero {
+  width: 20.438rem;
+  max-height: 12.5rem;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.main {
+  background-color: white;
+  width: 20.438rem;
+  height: 15.5rem;
+}
+
+.heading {
+  color: var(--very-dark-grayish-blue);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.013rem;
+}
+
+.card-p {
+  color: var(--desaturated-dark-blue);
+  font-size: 0.813rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  letter-spacing: 0.008rem;
+}
+
+.footer {
+  background-color: white;
+  width: 100%;
+}
+
+.name {
+  color: var(--very-dark-grayish-blue);
+  font-size: 0.813rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  letter-spacing: 0.008rem;
+}
+
+.date {
+  color: var(--grayish-blue);
+  font-size: 0.813rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  letter-spacing: 0.008rem;
+}
