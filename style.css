@@ -44,6 +44,7 @@
   align-items: stretch;
   border-radius: 1rem;
   box-shadow: 0px 40px 40px -10px hsla(210, 29%, 84%, 0.5);
+  position: relative;
 }
 
 .sr-only {
@@ -128,8 +129,67 @@
 
 .share-svg:hover path {
   fill: #fff !important;
+  background-color: var(--desaturated-dark-blue);
 }
 
 .share span {
   display: none;
+}
+
+.share-info {
+  position: absolute;
+  bottom: 0;
+  height: 4rem;
+  width: 100%;
+  background-color: var(--very-dark-grayish-blue);
+  border-radius: 0 0 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+  display: none;
+}
+
+.share-info span {
+  color: var(--grayish-blue);
+  font-size: 0.813rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.313rem;
+  font-weight: 400;
+}
+
+.share-clicked {
+  height: 2rem;
+  width: 2rem;
+  background-color: var(--desaturated-dark-blue);
+  border: none;
+  border-radius: 50%;
+}
+
+.share-svg-clicked path {
+  fill: #fff;
+}
+
+.share-clicked:hover {
+  cursor: pointer;
+  background-color: var(--light-grayish-blue);
+}
+
+.share-svg-clicked:hover path {
+  fill: var(--desaturated-dark-blue);
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    width: 45.625rem;
+    height: 17.5rem;
+  }
+
+  .hero-img {
+    border-radius: 1rem 0 0 1rem;
+    height: 17.5rem;
+  }
 }
