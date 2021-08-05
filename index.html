@@ -17,13 +17,12 @@
   </head>
 
   <!-- Container Start -->
-  <div class="container">
+  <body class="container">
     <!-- Card Start -->
-    <body class="card">
+    <figure class="card">
       <!-- Header -->
       <header>
         <h1 class="sr-only">Michelle Appleton Furniture Tip</h1>
-        <!-- *****Dont forget to hide this***** -->
         <img
           class="hero-img"
           src="./images/drawers.jpg"
@@ -50,14 +49,33 @@
       <!-- Footer -->
 
       <footer class="footer">
-        <h3 class="name">Michelle Appleton</h3>
-        <time class="date">28 Jun 2020</time>
-        <button>Share</button>
+        <img
+          class="michelle-img"
+          src="./images/avatar-michelle.jpg"
+          alt="Michelle Appleton headshot"
+        />
+        <div class="footer-div">
+          <h3 class="name">Michelle Appleton</h3>
+          <time class="date">28 Jun 2020</time>
+        </div>
+        <button class="share">
+          <svg
+            class="share-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            width="15"
+            height="13"
+          >
+            <path
+              fill="#6E8098"
+              d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+            />
+          </svg>
+          <span>Share</span>
+        </button>
       </footer>
-
-      <script src="./app.js"></script>
-    </body>
+    </figure>
+    <script src="./app.js"></script>
     <!-- Card End -->
-  </div>
+  </body>
   <!-- Container End -->
 </html>
