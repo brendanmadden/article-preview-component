@@ -1,26 +1,59 @@
 /* Imports */
 
 /* font-family: 'Manrope', sans-serif; */
-/* font-weight: 500, 700 */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap");
 
 /* Reset */
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-/* Variables */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Custom Properties */
 
 :root {
-  --very-dark-grayish-blue: hsl(217, 19%, 35%);
-  --desaturated-dark-blue: hsl(214, 17%, 51%);
-  --grayish-blue: hsl(212, 23%, 69%);
-  --light-grayish-blue: hsl(210, 46%, 95%);
+  --clr-primary-700: hsl(217, 19%, 35%);
+  --clr-primary-500: hsl(214, 17%, 51%);
+  --clr-primary-300: hsl(212, 23%, 69%);
+  --clr-primary-200: hsl(210, 46%, 95%);
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+
+  --fw-300: 300;
+  --fw-500: 500;
+  --fw-700: 700;
+
+  --ff-primary: "Manrope", sans-serif;
+
+  --spacer: 1rem;
+}
+
+/* Utility Classes */
+.flow-content > * + * {
+  margin-top: var(--flow-space, var(--spacer));
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.hidden {
+  display: none;
 }
 
 /* Screen Reader */
@@ -28,4 +61,27 @@
 .sr-only {
   position: absolute;
   left: -999%;
+}
+
+/* General Styling */
+
+body {
+  font-family: var(--ff-primary);
+  background-color: var(--clr-primary-200);
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  margin: 4.625rem 1.5rem;
+}
+
+.card__header {
+  flex: 1 1 20.438rem;
+}
+
+.card__content {
+  /* width: minmax(20.438rem, 27.813rem); */
+  flex: 0 1 27.813rem;
 }
