@@ -15,10 +15,16 @@
   margin: 0;
 }
 
-img {
+/* img {
   max-width: 100%;
   height: auto;
   display: block;
+} */
+
+img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 /* Custom Properties */
@@ -79,6 +85,11 @@ body {
 
 .card__header {
   flex: 1 1 20.438rem;
+  overflow: hidden;
+}
+
+.card__hero-img {
+  height: 12.5rem;
 }
 
 .card__content {
