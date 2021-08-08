@@ -36,7 +36,7 @@
 
         <div class="card__content">
           <!-- main -->
-          <main class="card__main">
+          <section class="card__main">
             <h2 class="card__heading">
               Shift the overall look and feel by adding these wonderful touches
               to furniture in your home
@@ -46,7 +46,7 @@
               it felt slightly bare and uninviting. I’ve got some simple tips to
               help you make any room feel complete.
             </p>
-          </main>
+          </section>
 
           <!-- footer -->
           <footer class="card__footer">
@@ -60,7 +60,11 @@
                 <a href="#"><img src="./images/icon-pinterest.svg" alt="" /></a>
               </div>
 
-              <button onclick="hideModal()" class="card__modal-btn">
+              <button
+                aria-label="Share"
+                onclick="hideModal()"
+                class="card__modal-btn"
+              >
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
                   <path
                     fill="#6E8098"
@@ -71,19 +75,19 @@
             </aside>
 
             <img
-              height="40px"
-              width="40px"
+              height="40"
+              width="40"
               class="card__footer-img"
               src="./images/avatar-michelle.jpg"
               alt="headshot of Michelle Appleton"
             />
 
             <div class="card__footer-text">
-              <h4 class="card__name">Michelle Appleton</h4>
-              <time class="card__date">28 Jun 2020</time>
+              <h3 class="card__name">Michelle Appleton</h3>
+              <time datetime="2020-06-28" class="card__date">28 Jun 2020</time>
             </div>
 
-            <button onclick="showModal()" class="card__btn">
+            <button aria-label="Share" onclick="showModal()" class="card__btn">
               <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
                 <path
                   fill="#6E8098"
