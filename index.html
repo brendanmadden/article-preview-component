@@ -16,90 +16,85 @@
     <title>Frontend Mentor | Article preview component</title>
   </head>
 
-  <!-- Container Start -->
-  <body class="container">
-    <!-- Card Start -->
-    <figure class="card">
-      <!-- Header -->
-      <header>
-        <h1 class="sr-only">Michelle Appleton Furniture Tip</h1>
-        <img
-          class="hero-img"
-          src="./images/drawers.jpg"
-          alt="bedroom drawers with vase and picture frames on top"
-        />
-      </header>
+  <body>
+    <!-- container start -->
+    <div class="container">
+      <!-- card start -->
+      <figure class="card">
+        <!-- header -->
+        <header class="card__header">
+          <h1 class="sr-only">
+            Michelle Appleton Furtniture Tips Article Preview
+          </h1>
+          <div class="card__hero-img">
+            <img
+              src="./images/drawers.jpg"
+              alt="aesthetic drawers with vase and picture frames on top"
+            />
+          </div>
+        </header>
 
-      <!-- Main Section -->
-      <div class="content">
-        <main class="main">
-          <article>
-            <h2 class="heading">
+        <div class="card__content">
+          <!-- main -->
+          <main class="card__main">
+            <h2 class="card__heading">
               Shift the overall look and feel by adding these wonderful touches
               to furniture in your home
             </h2>
-            <p class="card-p">
+            <p class="card__text">
               Ever been in a room and felt like something was missing? Perhaps
               it felt slightly bare and uninviting. I’ve got some simple tips to
               help you make any room feel complete.
             </p>
-          </article>
-        </main>
+          </main>
 
-        <!-- Footer -->
+          <!-- footer -->
+          <footer class="card__footer">
+            <aside id="modal" class="card__modal hidden">
+              <h3 class="card__modal-text">Share</h3>
+              <div class="card__modal-links">
+                <a href="#"><img src="./images/icon-facebook.svg" alt="" /></a>
+                <a href="#"><img src="./images/icon-twitter.svg" alt="" /></a>
+                <a href="#"><img src="./images/icon-pinterest.svg" alt="" /></a>
+              </div>
 
-        <footer class="footer">
-          <img
-            class="michelle-img"
-            src="./images/avatar-michelle.jpg"
-            alt="Michelle Appleton headshot"
-          />
-          <div class="footer-div">
-            <h3 class="name">Michelle Appleton</h3>
-            <time class="date">28 Jun 2020</time>
-          </div>
-          <button class="share">
-            <svg
-              class="share-svg"
-              xmlns="http://www.w3.org/2000/svg"
-              width="15"
-              height="13"
-            >
-              <path
-                fill="#6E8098"
-                d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
-              />
-            </svg>
-          </button>
-        </footer>
-      </div>
-      <!-- Content End -->
+              <button onclick="hideModal()" class="card__modal-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+                  <path
+                    fill="#6E8098"
+                    d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+                  />
+                </svg>
+              </button>
+            </aside>
 
-      <!-- Share Component Start -->
-
-      <div class="share-info">
-        <span>SHARE</span>
-        <img src="./images/icon-facebook.svg" alt="facebook logo" />
-        <img src="./images/icon-twitter.svg" alt="twitter logo" />
-        <img src="./images/icon-pinterest.svg" alt="pinterest logo" />
-        <button class="share-clicked">
-          <svg
-            class="share-svg-clicked"
-            xmlns="http://www.w3.org/2000/svg"
-            width="15"
-            height="13"
-          >
-            <path
-              fill="#6E8098"
-              d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+            <img
+              height="40px"
+              width="40px"
+              class="card__footer-img"
+              src="./images/avatar-michelle.jpg"
+              alt="headshot of Michelle Appleton"
             />
-          </svg>
-        </button>
-      </div>
-      <!-- Share Component End -->
-    </figure>
-    <!-- Card End -->
+
+            <div class="card__footer-text">
+              <h4 class="card__name">Michelle Appleton</h4>
+              <time class="card__date">28 Jun 2020</time>
+            </div>
+
+            <button onclick="showModal()" class="card__btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+                <path
+                  fill="#6E8098"
+                  d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+                />
+              </svg>
+            </button>
+          </footer>
+        </div>
+      </figure>
+      <!-- /card -->
+    </div>
+    <!-- /container -->
     <script src="./app.js"></script>
   </body>
-  <!-- Container End -->
 </html>
